@@ -1,7 +1,10 @@
-$(document).ready(function(){
-    $('.slider').slider({indicators:false,full_width: true,height:400,transition:1000});
+$(document).ready(function(){ 
+   $('.carousel').carousel();
     $('.modal-trigger').leanModal();
-   
+    $('ul.tabs').tabs();
+    
+  $('.carousel').carousel({dist:-50});
+
 });
 $('#contact').hover(function(){
      $(this).toggleClass("swing");
