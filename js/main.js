@@ -1,9 +1,8 @@
 $(document).ready(function(){ 
-   $('.carousel').carousel();
     $('.modal-trigger').leanModal();
     $('ul.tabs').tabs();
-    
-  $('.carousel').carousel({dist:-50});
+    $('.carousel').carousel()
+   
 
 });
 $('#contact').hover(function(){
@@ -21,3 +20,6 @@ $('.selfie').hover(function() {
 $('#comments').hover(function() {
    $("#comment-divider").toggleClass("comment-animation"); 
 });
+
+
+
