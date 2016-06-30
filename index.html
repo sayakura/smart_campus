@@ -9,15 +9,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <body>
-    <nav>
-      <div class="nav-wrapper   blue-grey darken-4">
-        <a href="#" class="brand-logo center"><span style="font-family: 'Poiret One', cursive;"> Smart Campus</span></a>
+    <nav >
+      <div class="nav-wrapper   blue-grey darken-4" style="box-shadow: 0px 3px 20px black;">
+        <a href="#" class="brand-logo center"><span style="font-family: 'Poiret One', cursive;">Portfolio</span></a>
       </div>
     </nav>
   
       <div class="caption center-align" style="padding:20px;background-color:#37474f">
         <img src="img/kura.jpg" class="selfie hoverable animated"/>
         <h3 class="white-text animated flip" style="font-family: 'Poiret One', cursive;" id="name">Kura Peng</h3>
+        <p class="white-text animated pulse" >This is my Bio</p>
         <a href="#modal1"><i class="medium material-icons white-text animated" id="contact">email</i></a>
   
          <!-- Modal Structure -->
@@ -33,27 +34,77 @@
       </div>
  
   
-    <div class="card-panel blue-grey darken-4" style="margin-top:0px;margin-bottom:0">
-        <h5 id="comments" class="orange-text" >Smart Campus</h5>
-        <div class="divider orange"></div>
+    <div class="card-panel blue-grey darken-2" style="margin-top:0px;margin-bottom:0">
       <div class="row">
         <div class="col s12">
+          <div class="container">
           <ul class="tabs">
-            <li class="tab col s3 "><a class="active" href="#test1"><span class="orange-text">Description</span></a></li>
-            <li class="tab col s3"><a href="#test2"><span class="orange-text">Test 2</span></a></li>
+            <li class="tab col s3 "><a class="active" href="#test1"><span class="orange-text">About Me</span></a></li>
+            <li class="tab col s3"><a href="#test2"><span class="orange-text">Information
+            
+            </span></a></li>
           </ul>
+          </div>
         </div>
         <div id="test1" class="col s12">
           <div style="height:5px"></div>
           
-           <div class="jR3DCarouselGallery" style="margin-top:10px;margin-buttom:10px"></div>
- 
-              
-          <h5 id="comments" class="orange-text" >What it Does?</h5>
-          <div class="divider orange"></div>
-          <p class="white-text">This project is created for PilotCity at BLC center, San Leandro, CA</p>
+
+           <div class="container">
+            <div class="jR3DCarouselGallery" style="margin-top:10px;margin-buttom:10px"></div>
+            <ul id="paragraph_list" class="left-align">
+              <li>
+                <h4 class="white-text"  style="font-family: 'Poiret One', cursive;">Career & Professional Development</h4>
+                <div class="divider orange"></div>
+                <p class="white-text" >This is a description</p>
+              </li>
+              <li>
+                <h4 class="white-text"  style="font-family: 'Poiret One', cursive;">List Item</h4>
+                <div class="divider orange"></div>
+                <p class="white-text" >This is a description</p>
+              </li>
+              <li>
+                 <h4 class="white-text"  style="font-family: 'Poiret One', cursive;">List Item</h4>
+                <div class="divider orange"></div>
+                <p class="white-text" >This is a description</p>
+              </li>
+              <li>
+                <h4 class="white-text"  style="font-family: 'Poiret One', cursive;">List Item</h4>
+                <div class="divider orange"></div>
+                <p class="white-text" >This is a description</p>
+              </li>
+              <li>
+                <h4 class="white-text"  style="font-family: 'Poiret One', cursive;">List Item</h4>
+                <div class="divider orange"></div>
+                <p class="white-text" >This is a description</p>
+              </li>
+            </ul>
+            </div>
           </div>
-        <div id="test2" class="col s12">Test 2</div>
+        <div id="test2" class="col s12">
+                
+          <h5 id="comments" class="orange-text" >Mission Statement</h5>
+          <div class="divider orange"></div>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+            <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+          <p class="white-text">Balabalaasdasdasd </p>
+    
+          
+          
+          </div>
       </div>
     </div>
     
@@ -114,7 +165,6 @@
     		
     	}
     	function show(slide){
-    		console.log("Slide shown: ", slide.find('img').attr('src'))
     	}
     	$('.carousel-props input').change(function(){
     		if(isNaN(this.value))

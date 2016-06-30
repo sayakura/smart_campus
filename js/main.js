@@ -1,8 +1,14 @@
 $(document).ready(function(){ 
     $('.modal-trigger').leanModal();
     $('ul.tabs').tabs();
-    $('.carousel').carousel()
-   
+    $('.carousel').carousel();
+     var options = [
+    {selector: '#paragraph_list', offset: 100, callback: function() {
+      Materialize.showStaggeredList("#paragraph_list");
+    } }
+  ];
+    Materialize.scrollFire(options);
+      
 
 });
 $('#contact').hover(function(){
